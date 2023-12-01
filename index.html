@@ -1,19 +1,20 @@
+<!-- Created by Taisto Tammilehto -->
 <!DOCTYPE html>
 <html> 
     <head> 
-        <!-- This is the title of the webpage shown in the bar -->
+        <!-- The title & icon of the webpage shown in the bar -->
+        <link rel ="icon" type="image/jpg" href="images/anodesoft.jpg">
         <title> 
-            Fluffy & cuddly dogs 
+            Anodesoft 
         </title>
     </head>
     <body> 
-        <p> Who let the dogs out? </p>
         <audio controls autoplay muted loop>
             <!-- Let's automatically play music which is muted by default -->
             <source src="audio/who.mp3" type="audio/mpeg">
         </audio>
         <!-- Let's add a header -->
-        <h1> Hyperlinks! </h1>
+        <h1> Examples of hyperlinks </h1>
         <!-- Include a link to my youtube channel -->
         <a href="https://www.youtube.com/channel/UCib_rCQBRSzeYM2LYuebyIg" 
             target="_blank"
@@ -26,6 +27,8 @@
             email me
         </a>
         <br>
+        <br>
+        <h3> Images with hyperlinks </h3>
         <!-- Pressable picture which leads to a wikipedia page -->
         <a href="https://en.wikipedia.org/wiki/Dog"
         target ="_blank"
@@ -42,6 +45,89 @@
         alt = "This is a gif of a dog"
         height = "200">
         </a>
+        <br>
+        <h3> Different stylings for text in HTML </h3>
+        <!-- Using different text formatting -->
+        <p> This is normal text </p>
+        <p> This is <b>bold</b> text </p>
+        <p> This is <i>italic</i> text </p>
+        <p> This is <u>underlined</u> text </p>
+        <p> This is <del>deleted</del> text </p>
+        <p> This is <big>big</big> text </p>
+        <p> This is <small>small</small> text </p>
+        <p> This is <sub>subscript</sub> text </p>
+        <p> This is <sup>superscript</sup> text </p>
+        <p> This is <tt>monospaced</tt> text </p>
+        <p> This is <mark style="background-color:lightgreen">highlighted</mark> text </p>
+        <!-- Inline containerm takes the text's width of the document -->
+        <p> <span style = "background-color: tomato"> This is a span text </span> </p>
+        <!-- Block container, takes the entire width of the document -->
+        <p> </p><div style = "background-color: cyan"> This is a div text </div> </p>
+
+        <!-- This is an unordered list -->
+        <h4> Unordered list </h4>
+        <ul>
+        <li> Item </li>
+        <li> Item </li>
+        <li> Item </li>
+        <li> Nested list </li>
+        <ul>
+             <li> Nested list item </li>
+             <li> Nested list item </li>
+             <li> Nested list item </li>
+        </ul>
+        </ul>
+
+        <!-- This is an ordered list -->
+        <h4> Ordered list </h4>
+        <ol>
+            <li> This is the first step </li>
+            <li> This is the second step </li>
+            <li> This is the third step </li>
+        </ol>
+
+        <!-- This is a description list -->
+        <h4> Description list </h4>
+        <dl style="background-color: lightpink; border:2px solid">
+            <dt> Some term </dt>
+            <dd> The description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Delectus amet nesciunt repellendus, ab maxime sint ratione! 
+                Unde, hic numquam a voluptates cumque odit modi eum non corporis totam perferendis nulla. </dd>
+            <dt> Some term </dt>
+            <dd> The description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Animi cumque aliquid id soluta ut iste distinctio at! 
+                Sapiente ad, minus praesentium assumenda illo beatae quisquam at id perferendis pariatur inventore? </dd>
+            <dt> Some term </dt>
+            <dd> The description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Accusamus aliquid ullam ducimus harum saepe veritatis fugiat rem. 
+                Nesciunt, impedit numquam. Ex excepturi alias dignissimos aliquam, doloremque esse optio molestias. Animi. </dd>
+        </dl>
+
+        <!-- Buttons -->
+        <h4> This is a button </h4>
+        <a href="page2.html">
+        <button style="font-size: 25; background-color: aquamarine; color:rgb(51, 51, 43); border-radius: 25px"> click me </button>
+        </a>
+
+        <!-- Tables -->
+        <h4> This is a table </h4>
+        <table border="1"; style="background-color: black">
+            <!-- Table row -->
+            <tr align="center"; style="background-color: aquamarine;">
+                <th width="100px">1</th>
+                <th width="100px">2</th>
+                <th width="100px">3</th>
+                <th width="100px">4</th>
+            </tr>
+            <!-- Second row with data -->
+            <tr align ="center"; style="background-color: beige";>
+                <td> one </td>
+                <td> two </td>
+                <td> three </td>
+                <td> four </td>
+            </tr>
+        </table>
+
 
     </body>
 </html>
